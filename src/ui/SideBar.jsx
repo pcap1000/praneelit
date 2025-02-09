@@ -35,7 +35,7 @@ function SideBar() {
     <>
       <audio 
         ref={audioRef} 
-        src="./public/img/Warriors.mp3"
+        src="./img/Warriors.mp3"
         onTimeUpdate={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
       />

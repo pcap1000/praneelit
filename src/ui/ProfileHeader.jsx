@@ -17,7 +17,7 @@ const ProfileHeader = () => {
           <div className={styles.profileSection}>
             <div className={styles.profilePicture}>
               <img 
-                src="src\images\praneelpic.jpeg" 
+                src="./img/praneelpic.jpeg" 
                 alt="Profile Picture" 
                 className={styles.profilePictureImg}
               />
