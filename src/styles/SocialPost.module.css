@@ -313,34 +313,40 @@ border-top: 2px solid rgba(255, 255, 255, 0.1);
 /* Adjustments for larger screens */
 @media (min-width: 1024px) {
   .post {
-    max-width: 675px;
-    margin-left: 37%;
+      max-width: 675px;
+      margin-left: 37%;
+  }
 }
+@media (min-width: 1160px) {
+  .post {
+      max-width: 600px;
+      margin-left: 37%;
+  }
 }
 
 @media (min-width: 1280px) {
-.post {
-    max-width: 730px;
-    margin-left: 33%;
-}
+  .post {
+      max-width: 730px;
+      margin-left: 33%;
+  }
 }
 
 @media (min-width: 1440px) {
-.post {
-    max-width: 880px;
-}
+  .post {
+      max-width: 880px;
+  }
 }
 
 @media (min-width: 1600px) {
   .post {
-    max-width: 1000px;
-    margin-left: 31%;
-}
+      max-width: 910px;
+      margin-left: 31%;
+  }
 }
 
 @media (min-width: 1800px) {
-.post {
-    max-width: 1117px;
-    margin-left: 31%;
-}
+  .post {
+      max-width: 1117px;
+      margin-left: 31%;
+  }
 }
