@@ -5,6 +5,7 @@ import SideBar from './SideBar';
 import CommunityProfile from './CommunityProfile';
 import ProfileHeader from './ProfileHeader';
 import SocialPost from './SocialPost';
+import { Analytics } from "@vercel/analytics/react"
 
 
 function AppLayoutProject() {
@@ -14,6 +15,7 @@ function AppLayoutProject() {
 			<main className={styles.container}>
 			<ProfileHeader/>
 				<SideBar />
+				<Analytics />
 				<CommunityProfile/>
 				<SocialPost
 					title="My Projects"

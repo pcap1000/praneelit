@@ -4,11 +4,13 @@ import Header from './Header';
 import SideBar from './SideBar';
 import CommunityProfile from './CommunityProfile';
 import Posts from './Posts'; 
+import { Analytics } from "@vercel/analytics/react"
 
 function AppLayout() {
 	return (
 		<div>
 			<Header />
+			<Analytics />
 			<main className={styles.container}>
 				<SideBar />
 				<CommunityProfile/>
