@@ -1,0 +1,268 @@
+.profileWrapper {
+    position: relative;
+    top: 0;
+    right: -4%;
+    width: 312px;
+    height: 100vh;
+    z-index: 100;
+    pointer-events: none; /* Allows scrolling of content behind the wrapper */
+  }
+  
+  .profileContainer {
+    position: relative;
+    width: 20%;
+    background-color: #080808;
+    padding: 16px;
+    border-radius: 4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 70vh; /* Changed from calc(108vh - 120px) */
+    margin-top: 75%; /* Reduced from 85% */
+    pointer-events: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 5px;
+    
+  }
+  .profileWrapper {
+    position: fixed;
+    top: 40%;
+    right: -4%;
+    width: 312px;
+    height: 100vh;
+    z-index: 100;
+    pointer-events: none;
+  }
+  
+  .profileContainer {
+    position: fixed;
+    top: 0%;  /* Change from 20% to 0 */
+    width: 20%;
+    max-height: 90vh;  /* Increased max-height */
+    margin-top: 0;
+    overflow-y: auto;
+    pointer-events: auto;
+    margin-left: 78%;
+    margin-top: 6%;
+  }
+  
+  .profileContainer::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .profileContainer::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .profileContainer::-webkit-scrollbar-thumb {
+    background: #343536;
+    border-radius: 3px;
+  }
+  
+  .profileContainer::-webkit-scrollbar-thumb:hover {
+    background: #404040;
+  }
+  
+  .headerContainer {
+    margin-bottom: 1rem;
+  }
+  
+  .username {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #d7dadc;
+  }
+  
+  .description {
+    color: #818384;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  .meta {
+    color: #818384;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .metaItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon {
+    color: #818384;
+    margin-right: 6px;
+    font-size: 15px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #343536;
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .statNumber {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #d7dadc;
+  }
+  
+  .statLabel {
+    font-size: 0.75rem;
+    color: #818384;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .onlineDot {
+    width: 8px;
+    height: 8px;
+    background-color: #46d160;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 8px;
+    margin: 8px 0;
+  }
+  
+  .navButton {
+    background: none;
+    border: none;
+    color: #818384;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 8px 0;
+    transition: color 0.2s;
+  }
+  
+  .navButton:hover {
+    color: #d7dadc;
+  }
+  
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socialButton {
+    background-color: #272729;
+    color: #d7dadc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+  
+  .socialButton:hover {
+    background-color: #2d2d2f;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #343536;
+    margin: 8px 0;
+  }
+  
+  .rules {
+    background-color: #1a1a1b;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .rulesTitle {
+    color: #d7dadc;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .rules ul {
+    list-style-type: none;
+    padding-left: 4px;
+  }
+  
+  .rules li {
+    font-size: 1rem;
+    color: #818384;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .moderators {
+    background-color: #1a1a1b;
+    padding: 12px;
+    border-radius: 4px;
+  }
+  
+  .moderatorsTitle {
+    font-size: 0.875rem;
+    color: #818384;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .modItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+  }
+  
+  .modAvatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .moderatorName {
+    font-size: 1rem;
+    color: #d7dadc;
+  }
+  
+  @media (max-width: 960px) {
+    .profileWrapper {
+      position: relative;
+      width:  75%;
+      height: auto;
+      right: 0;
+      margin-top: 16px;
+      left: 25px;
+    }
+  
+    .profileContainer {
+      width: 65%;
+      margin-top: 0;
+      max-height: none;
+      left: 25px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profileWrapper {
+      display: none;
+    }
+  }

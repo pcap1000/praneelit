@@ -1,0 +1,40 @@
+<!--
+SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Font weights:
+  Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
+
+Line heights:
+  Default: 1
+  Small: 1.05
+  Medium: 1.2
+  Paragraph default: 1.6
+  Large: 1.8
+
+Letter spacing:
+  0.5px
+  0.75px
+
+Colors:
+  Primary: #ce3608, #95370E
+  Tints:
+
+  Shades:
+  Accents:
+  Greys:  #111318, #333948, #555E77, #949CB3, #DBDEE6, #F3F4F7
+
+Shadows:
+  asd
+
+Border radius:
+  asd
+
+
+-->

@@ -1,0 +1,292 @@
+.sideBar {
+  position: sticky;
+  top: 6rem;
+  padding: 1rem;
+  height: calc(100vh - 6rem);
+  width: 35rem;
+  background-color: #111318;
+  border-right: 1px solid #333948;
+
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #111318 #111318;
+  scrollbar-width: thin;
+}
+
+.sideBar:hover {
+  scrollbar-color: #333948 #111318;
+}
+
+.horizontalLine {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-color: #333948;
+  width: 23rem;
+  /* margin-left: 0; */
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 3.6rem;
+  padding-bottom: 1.8rem;
+  padding-right: 2.4rem;
+}
+
+.footerLink:link,
+.footerLink:visited {
+  text-decoration: none;
+  color: #f3f4f7;
+  cursor: pointer;
+}
+
+.footerLink:hover,
+.footerLink:active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Если не нужно скроллить, то это хорошее решение
+.dropdownResoursesOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: ease 0.5s;
+}
+
+.dropdownResoursesClose {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: ease 0.2s;
+} */
+.sideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  height: 100vh;
+  width: 18rem;
+  background-color: #111318;
+  border-right: 1px solid #333948;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.navMenu {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.navMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navMenu li {
+  width: 100%;
+  text-align: left;
+  padding: 0.8rem 1.5rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #f3f4f7;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.navItem:hover {
+  color: #ff6600;
+}
+
+.icon {
+  font-size: 1.3rem;
+}
+
+.active {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.horizontalLine {
+  width: 80%;
+  height: 1px;
+  background-color: #333948;
+  margin: 1rem 0;
+}
+
+.musicPlayer {
+  background-color: #1a1c23;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem; /* Added margin to separate it from the Resume button */
+}
+
+.songCover {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.songDetails {
+  text-align: center;
+}
+
+.songDetails h3 {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+}
+
+.songDetails p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.progressBar {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.slider {
+  width: 100%;
+  accent-color: #ff6600;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.controlButton,
+.playButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.playButton {
+  color: #ff6600;
+  font-size: 1.5rem;
+}
+
+.controlButton:hover,
+.playButton:hover {
+  color: #ff3300;
+}
+
+.resumeButton {
+  background-color: #ff6600;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 90%;
+  text-align: center;
+}
+
+.resumeButton:hover {
+  background-color: #ff3300;
+}
+
+.sideBar {
+  position: fixed;
+  top: 60px; /* Added space for header */
+  left: 0;
+  padding: 1rem;
+  height: calc(100vh - 60px); /* Adjusted height to account for header */
+  width: 20rem;
+  background-color: #111318;
+  border-right: 1px solid #333948;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+/* Rest of your CSS styles remain the same */
+.navMenu {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.navMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ... rest of the existing styles ... */
+
+
+.sideBar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 1rem;
+  height: calc(100vh - 60px);
+  width: clamp(16rem, 20vw, 20rem);
+  background-color: #111318;
+  border-right: 1px solid #333948;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.menuToggle {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  color: #f3f4f7;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .sideBar {
+    transform: translateX(-100%);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sideBar.open {
+    transform: translateX(0);
+  }
+}
+

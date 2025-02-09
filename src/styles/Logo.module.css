@@ -1,0 +1,13 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 7rem;
+  margin-left: 25%;
+}
+.name{
+  /* height: 5rem; */
+  width: 12rem;
+}
