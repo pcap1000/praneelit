@@ -312,8 +312,9 @@ border-top: 2px solid rgba(255, 255, 255, 0.1);
 
 /* Adjustments for larger screens */
 @media (min-width: 1024px) {
-.post {
-    max-width: 800px;
+  .post {
+    max-width: 675px;
+    margin-left: 37%;
 }
 }
 
