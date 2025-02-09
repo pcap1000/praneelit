@@ -93,7 +93,7 @@
 .navMenu li {
   width: 100%;
   text-align: left;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 1rem;
 }
 
 .navItem {
@@ -102,7 +102,7 @@
   gap: 1rem;
   text-decoration: none;
   color: #f3f4f7;
-  font-size: 1.1rem;
+  font-size: 15px;
   transition: color 0.2s;
 }
 
@@ -282,7 +282,7 @@
   .sideBar {
     transform: translateX(-100%);
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .sideBar.open {
