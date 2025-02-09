@@ -5,12 +5,12 @@ function Logo() {
     <div className={styles.logoContainer}>
       <img
         className={styles.logo}
-        src="src\images\reddit-logo-transparent.webp"
+        src="./public/img/reddit-logo-nobg.png"
         //  src="./public/img/reddit-logo-nobg.png"
       />
       <img
         className={styles.name}
-        src="src\images\praneelitorg.png"
+        src="./public/img/praneelitorg.png"
         //  src="./public/img/reddit-logo-nobg.png"
       />
     </div>
