@@ -6,7 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import "./styles/App.css";
 import AppLayout from "./ui/AppLayout";
 import AppLayoutProject from "./ui/AppLayoutProject";
-import AppLayoutBlog from "./ui/AppLayoutBlog";
+import AppLayoutAbout from "./ui/AppLayoutAbout";
 import AppLayoutPost from "./ui/AppLayoutPost";
 import Posts from "./ui/Posts";
 
@@ -17,7 +17,6 @@ function App() {
         {/* General Layout */}
         <Route element={<AppLayout />}>
           <Route index element={<PostsPage />} />
-          <Route path="about" element={<AboutPage />} />
         </Route>
 
         {/* Project Layout */}
@@ -26,8 +25,8 @@ function App() {
         </Route>
 
         {/* Blog Layout */}
-        <Route element={<AppLayoutBlog />}>
-          <Route path="blog" element={<PostsPage />} />
+        <Route element={<AppLayoutAbout />}>
+        <Route path="about" element={<AboutPage />} />
         </Route>
 
         {/* Post Layout */}

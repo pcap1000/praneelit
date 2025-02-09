@@ -7,7 +7,7 @@ import ProfileHeader from './ProfileHeader';
 import SocialPost from './SocialPost';
 
 
-function AppLayout() {
+function AppLayoutAbout() {
 	return (
 		<div>
 			<Header />
@@ -23,13 +23,6 @@ function AppLayout() {
 					postId="about-post-1"
 
 				/>
-				<SocialPost
-					title="My Projects"
-					content="Optimizing Time-Slotted Deliveries for Post Offices and Courier Companies Managing time-window-based deliveries has always been a challenge for post offices and courier companies"
-					username="praneelchetty"
-					avatar="https://i.pinimg.com/474x/74/9d/48/749d48da0ae85583aee308f6947d5179.jpg"
-					postId="project-post-1"
-				/>
 				{/* <EmptyProfileHeader /> */}
 				{/* <ProfileHeader/> */}
 				<Outlet />
@@ -38,4 +31,4 @@ function AppLayout() {
 	);
 }
 
-export default AppLayout;
+export default AppLayoutAbout;
