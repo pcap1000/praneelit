@@ -290,7 +290,7 @@
   position: absolute;
   background-color: #1a1a1b;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   padding: 6px 8px;
   border-radius: 4px;
   white-space: nowrap;
@@ -309,7 +309,7 @@
   transform: translateX(-50%);
   background-color: #1a1a1b;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   padding: 6px 8px;
   border-radius: 4px;
   white-space: nowrap;

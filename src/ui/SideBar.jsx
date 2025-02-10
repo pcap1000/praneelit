@@ -35,7 +35,7 @@ function SideBar() {
     <>
       <audio 
         ref={audioRef} 
-        src="./img/Warriors.mp3"
+        src="src/images/Warriors.mp3"
         onTimeUpdate={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
       />
@@ -50,7 +50,7 @@ function SideBar() {
             <li>
               <Link 
                 to="/" 
-                className={`${styles.navItem} ${location.pathname === "/about" ? styles.active : ""}`} 
+                className={`${styles.navItem} ${location.pathname === "/" ? styles.active : ""}`} 
                 onClick={() => setIsOpen(false)}
               >
                 <FaUserAlt className={styles.icon} />
@@ -60,7 +60,7 @@ function SideBar() {
             <li>
               <Link 
                 to="/About" 
-                className={`${styles.navItem} ${location.pathname === "/blog" ? styles.active : ""}`} 
+                className={`${styles.navItem} ${location.pathname === "/about" ? styles.active : ""}`} 
                 onClick={() => setIsOpen(false)}
               >
                 <FaPenNib className={styles.icon} />
