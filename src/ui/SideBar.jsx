@@ -60,7 +60,7 @@ function SideBar() {
             <li>
               <Link 
                 to="/About" 
-                className={`${styles.navItem} ${location.pathname === "/about" ? styles.active : ""}`} 
+                className={`${styles.navItem} ${location.pathname === "/About" ? styles.active : ""}`} 
                 onClick={() => setIsOpen(false)}
               >
                 <FaPenNib className={styles.icon} />
