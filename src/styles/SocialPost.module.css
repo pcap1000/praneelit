@@ -352,7 +352,7 @@ border-top: 2px solid rgba(255, 255, 255, 0.1);
 
 @media (min-width: 1800px) {
 .post {
-    max-width: 1117px;
+    max-width: 1050px;
     margin-left: 31%;
 }
 }
